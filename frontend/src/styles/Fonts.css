@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/proximanova_light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/proximanova_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/proximanova_bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}

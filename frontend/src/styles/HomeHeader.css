@@ -1,0 +1,38 @@
+.home-header-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 5vh;
+  margin-bottom: 7vh;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.link:hover {
+  border-bottom-color: white;
+  color: white;
+}
+
+.link:visited {
+  color: white;
+}
+
+.link:active {
+  color: white;
+}

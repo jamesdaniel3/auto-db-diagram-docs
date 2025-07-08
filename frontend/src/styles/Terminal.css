@@ -1,0 +1,120 @@
+.terminal-container {
+  min-height: 20%;
+  font-family: "Courier New", "Monaco", "Lucida Console", monospace;
+  margin-top: 8vh;
+}
+
+.terminal-wrapper {
+  margin: 0 auto;
+}
+
+.terminal-window {
+  background-color: #000000;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  min-height: 20vh;
+  width: 60vw;
+}
+
+.terminal-header {
+  background-color: #374151;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-traffic-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-traffic-light {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.terminal-traffic-light--close {
+  background-color: #ef4444;
+}
+
+.terminal-traffic-light--minimize {
+  background-color: #eab308;
+}
+
+.terminal-traffic-light--maximize {
+  background-color: #22c55e;
+}
+
+.terminal-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+.terminal-line {
+  margin-bottom: 0.5rem;
+}
+
+.terminal-prompt {
+  color: #4ade80;
+}
+
+.terminal-text {
+  color: #ffffff;
+}
+
+.terminal-cursor {
+  color: #ffffff;
+  transition: opacity 0.1s ease;
+}
+
+.terminal-cursor--visible {
+  opacity: 1;
+}
+
+.terminal-cursor--hidden {
+  opacity: 0;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Scrollbar styling for webkit browsers */
+.terminal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.terminal-content::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Focus states for accessibility */
+.terminal-window:focus-within {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Selection styling */
+.terminal-content ::selection {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
