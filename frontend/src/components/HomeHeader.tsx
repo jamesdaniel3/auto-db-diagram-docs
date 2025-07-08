@@ -14,7 +14,10 @@ export default function HomeHeader() {
           >
             View the Code
           </a>
-          <Link to={{ pathname: "/docs" }} className="link">
+          <Link
+            to={{ pathname: "/docs/installation/overview" }}
+            className="link"
+          >
             View the Docs
           </Link>
         </div>
