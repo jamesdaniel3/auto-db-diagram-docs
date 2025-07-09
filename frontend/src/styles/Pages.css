@@ -1,0 +1,86 @@
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.page-section-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.page-text {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+}
+
+.page-intext-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.page-intext-link:hover {
+  border-bottom-color: white;
+  color: white;
+}
+
+.note-top-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-note-container {
+  border-left: 2px solid white;
+  padding-left: 20px;
+}
+
+.page-note-label {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.info-image {
+  filter: invert(1);
+  margin-right: 10px;
+}
+
+.os-table-container {
+  overflow: hidden;
+}
+
+.os-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.os-table th {
+  background-color: transparent;
+  color: #f0f6fc;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #30363d;
+}
+
+.os-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #30363d;
+  color: #e6edf3;
+  background-color: transparent;
+}
+
+.os-table tr:last-child td {
+  border-bottom: 1px solid #30363d;
+}
+
+.os-table tr:hover {
+  background-color: rgba(12, 17, 22, 0.3);
+}
