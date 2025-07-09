@@ -10,6 +10,7 @@ interface LinkItem {
 
 import "../styles/Docs.css";
 import arrow from "../assets/images/right-arrow.png";
+import { Link } from "react-router-dom";
 
 export default function DocsFooter({ previous, next }: DocsFooterPropts) {
   return (
@@ -27,16 +28,16 @@ export default function DocsFooter({ previous, next }: DocsFooterPropts) {
               className="previous-page-arrow"
               style={{ height: "20px", width: "20px" }}
             />
-            <a href={previous.url} className="page-intext-link">
+            <Link to={previous.url} className="page-intext-link">
               {previous.name}
-            </a>
+            </Link>
           </div>
         )}
         {next && (
           <div className="new-page-container">
-            <a href={next.url} className="page-intext-link">
+            <Link to={next.url} className="page-intext-link">
               {next.name}
-            </a>
+            </Link>
             <img
               src={arrow}
               alt="arrow indicating link to next page"
