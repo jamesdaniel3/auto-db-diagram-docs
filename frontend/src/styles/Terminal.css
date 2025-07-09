@@ -93,32 +93,23 @@
   }
 }
 
-/* Scrollbar styling for webkit browsers */
-.terminal-content::-webkit-scrollbar {
-  width: 8px;
+@media (max-width: 1200px) {
+  .terminal-window {
+    width: 60vw;
+  }
 }
 
-.terminal-content::-webkit-scrollbar-track {
-  background: #1f2937;
+@media (max-width: 900px) {
+  .terminal-window {
+    width: 70vw;
+  }
 }
 
-.terminal-content::-webkit-scrollbar-thumb {
-  background: #4b5563;
-  border-radius: 4px;
-}
-
-.terminal-content::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
-}
-
-/* Focus states for accessibility */
-.terminal-window:focus-within {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-}
-
-/* Selection styling */
-.terminal-content ::selection {
-  background-color: #3b82f6;
-  color: #ffffff;
+@media (max-width: 700px) {
+  .terminal-window {
+    width: 80vw;
+  }
+  .terminal-container {
+    font-size: 10px;
+  }
 }
