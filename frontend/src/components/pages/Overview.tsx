@@ -70,7 +70,7 @@ export default function Overview() {
         </div>
         <p className="page-text">
           This program is not perfect, but it's getting better everyday, if you
-          have a problem,{" "}
+          encounter a problem,{" "}
           <a
             className="page-intext-link"
             target="_blank"

@@ -67,6 +67,7 @@ export default function PostgresUsage() {
           <p className="page-text">
             {" "}
             database_type is a required field and must be the string postgres
+            (case-sensitive)
           </p>
         </li>
         <li>
