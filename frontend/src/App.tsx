@@ -12,9 +12,23 @@ import SQLiteUsage from "./components/pages/SQLiteUsage";
 import MongoDBUsage from "./components/pages/MongoDBUsage";
 import Limitations from "./components/pages/Limitations";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function App() {
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/docs" element={<DocsPage />}>
