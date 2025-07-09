@@ -10,8 +10,6 @@ import PostgresUsage from "./components/pages/PostgresUsage";
 import MySQLUsage from "./components/pages/MySQLUsage";
 import SQLiteUsage from "./components/pages/SQLiteUsage";
 import MongoDBUsage from "./components/pages/MongoDBUsage";
-import Limitations from "./components/pages/Limitations";
-
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -40,7 +38,6 @@ export default function App() {
           <Route path="usage/mysql" element={<MySQLUsage />} />
           <Route path="usage/sqlite" element={<SQLiteUsage />} />
           <Route path="usage/mongodb" element={<MongoDBUsage />} />
-          <Route path="usage/limitations" element={<Limitations />} />
         </Route>
       </Routes>
     </>
