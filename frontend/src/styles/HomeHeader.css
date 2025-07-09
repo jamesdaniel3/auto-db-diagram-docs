@@ -22,6 +22,7 @@
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
   transition: border-bottom-color 0.2s ease;
+  font-weight: 600;
 }
 
 .link:hover {

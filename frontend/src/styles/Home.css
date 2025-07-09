@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 95vh;
+  line-height: 1.2;
 }
 
 .main-title {
