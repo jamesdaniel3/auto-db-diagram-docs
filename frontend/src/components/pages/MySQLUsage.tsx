@@ -37,6 +37,7 @@ export default function MySQLUsage() {
             className="info-image"
             src={infoImage}
             style={{ height: "20px", width: "20px" }}
+            alt="info icon"
           />
           <p className="page-note-label">Note</p>
         </div>

@@ -6,6 +6,8 @@ interface NavLink {
   id: string;
   name: string;
   url: string;
+  isExternal?: boolean;
+  isEmail?: boolean;
 }
 
 interface NavItem {
@@ -74,7 +76,51 @@ export default function DocsNavbar() {
         },
       ],
     },
+    {
+      title: "More",
+      id: "more",
+      subItems: [
+        {
+          name: "Questions?",
+          url: "mailto:jamesmd333@gmail.com",
+          id: "contact-email",
+          isEmail: true,
+        },
+        {
+          name: "See the Code!",
+          url: "https://github.com/jamesdaniel3/auto-db-diagram",
+          id: "github-repo",
+          isExternal: true,
+        },
+      ],
+    },
   ];
+
+  const renderNavLink = (subItem: NavLink) => {
+    const commonClasses = `navbar-link-container ${
+      location.pathname === subItem.url ? "navbar-link-container--active" : ""
+    }`;
+
+    if (subItem.isEmail || subItem.isExternal) {
+      return (
+        <a
+          href={subItem.url}
+          className={commonClasses}
+          key={subItem.id}
+          target={subItem.isExternal ? "_blank" : undefined}
+          rel={subItem.isExternal ? "noopener noreferrer" : undefined}
+        >
+          <span className="navbar-link">{subItem.name}</span>
+        </a>
+      );
+    }
+
+    return (
+      <Link to={subItem.url} className={commonClasses} key={subItem.id}>
+        <span className="navbar-link">{subItem.name}</span>
+      </Link>
+    );
+  };
 
   return (
     <>
@@ -82,28 +128,10 @@ export default function DocsNavbar() {
         {NAVBAR_ITEMS.map((item) => (
           <div key={item.id} className="navbar-section-container">
             <p className="navbar-section-title">{item.title}</p>
-            {item.subItems.map((subItem) => (
-              <Link
-                to={subItem.url}
-                className={`navbar-link-container ${
-                  location.pathname === subItem.url
-                    ? "navbar-link-container--active"
-                    : ""
-                }`}
-                key={subItem.id}
-              >
-                <span className="navbar-link">{subItem.name}</span>
-              </Link>
-            ))}
+            {item.subItems.map(renderNavLink)}
           </div>
         ))}
       </div>
     </>
   );
 }
-
-// #d4d4d8
-
-// #a1a1aa
-
-// #71717a
