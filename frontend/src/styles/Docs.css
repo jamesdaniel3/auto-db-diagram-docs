@@ -3,4 +3,40 @@
   flex-direction: row;
   max-width: 1400px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-container.footer-container--last {
+  justify-content: flex-start;
+}
+
+.footer-container.footer-container--first {
+  justify-content: flex-end;
+}
+
+.next-page-arrow {
+  filter: invert(1);
+  margin-left: 10px;
+  padding-bottom: 3px;
+}
+
+.previous-page-arrow {
+  filter: invert(1);
+  transform: rotate(180deg);
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.new-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
