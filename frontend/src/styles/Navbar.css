@@ -1,12 +1,12 @@
 .navbar-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   margin-right: 50px;
   flex-shrink: 0;
   position: sticky;
-  top: 0;
+  top: 42px;
 }
 
 .navbar-section-container {
@@ -125,6 +125,7 @@
     filter: invert(1);
     transform: rotate(180deg);
     margin-right: 6vw;
+    margin-top: 10px;
   }
 
   .close-navbar-container {
