@@ -23,14 +23,9 @@ export const NAVBAR_ITEMS: NavItem[] = [
         id: "installation-overview",
       },
       {
-        name: "MacOS Installation",
+        name: "MacOS + Linux",
         url: "/docs/installation/macos",
         id: "installation-macos",
-      },
-      {
-        name: "Linux Installation",
-        url: "/docs/installation/linux",
-        id: "installation-linux",
       },
     ],
   },
