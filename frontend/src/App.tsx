@@ -4,7 +4,6 @@ import Home from "./routes/Home";
 import DocsPage from "./routes/DocsPage";
 import Overview from "./components/pages/Overview";
 import MacOSInstallation from "./components/pages/MacOSInstallation";
-import LinuxInstallation from "./components/pages/LinuxInstallation";
 import InteractiveUsage from "./components/pages/InteractiveUsage";
 import PostgresUsage from "./components/pages/PostgresUsage";
 import MySQLUsage from "./components/pages/MySQLUsage";
@@ -32,7 +31,6 @@ export default function App() {
         <Route path="/docs" element={<DocsPage />}>
           <Route path="installation/overview" element={<Overview />} />
           <Route path="installation/macos" element={<MacOSInstallation />} />
-          <Route path="installation/linux" element={<LinuxInstallation />} />
           <Route path="usage/interactive" element={<InteractiveUsage />} />
           <Route path="usage/postgres" element={<PostgresUsage />} />
           <Route path="usage/mysql" element={<MySQLUsage />} />
