@@ -3,10 +3,21 @@ import { Link } from "react-router-dom";
 export default function MacOSInstallation() {
   return (
     <>
-      <p className="page-title">MacOS Installation</p>
+      <p className="page-title">MacOS and Linux Installation</p>
       <p className="page-text">
-        Installation on MacOS can be completed with just a few commands, so open
-        a terminal and do the following!
+        First, ensure that you have homebrew on your machine. If you need
+        instructions for installing homebrew; they can be found{" "}
+        <a
+          className="page-intext-link"
+          target="_blank"
+          href="https://www.brew.sh"
+        >
+          here.
+        </a>
+      </p>
+      <p className="page-text">
+        Installation can be completed with just a few commands, so open your
+        terminal and do the following!
       </p>
 
       <p className="page-section-header">Add our custom Homebrew tap</p>
@@ -66,7 +77,7 @@ export default function MacOSInstallation() {
       </p>
       <div className="terminal-command-container">
         <p className="terminal-command-text">
-          <span className="terminal-command-prompt">$ </span> db-diagram
+          <span className="terminal-command-prompt">$ </span> db-diagram --help
         </p>
       </div>
     </>
